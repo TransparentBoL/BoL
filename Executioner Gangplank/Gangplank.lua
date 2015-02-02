@@ -3,9 +3,8 @@ local ERange= 1300
 local QReady, WReady, EReady, RReady = false, false, false, false
 
 function OnLoad()
-    if myHero.charName ~= "Gangplank" then 
-    	return 
-    end  
+    if myHero.charName ~= "Gangplank" then return end
+	
     enemyMinions = minionManager(MINION_ENEMY, 600, myHero, MINION_SORT_HEALTH_ASC)
     Gangplank = scriptConfig("Gangplank", "Gangplank") 
      
